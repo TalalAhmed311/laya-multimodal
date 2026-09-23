@@ -1,0 +1,19 @@
+# Install torch FIRST, matched to your CUDA build (https://pytorch.org).
+# On an AWS DLAMI torch is already present — do not let pip replace it with a
+# CPU wheel, or training silently runs ~30x slower.
+torch>=2.0.0
+
+laya>=0.3.0
+transformers>=4.45.0
+safetensors>=0.4.0
+huggingface_hub>=0.20.0
+numpy>=1.20.0
+pillow>=9.0.0
+sentencepiece>=0.1.99
+protobuf>=4.0.0
+
+matplotlib>=3.5.0
+
+# only for running the training notebook headless
+jupyter>=1.0.0
+nbconvert>=7.0.0

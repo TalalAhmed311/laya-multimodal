@@ -1,0 +1,19 @@
+# Large / regenerated artifacts — never commit
+data/
+cache/
+checkpoints/
+
+# Model weight blobs anywhere
+*.pt
+*.safetensors
+*.npy
+*.npz
+
+# Python / tooling
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Logs from overnight runs (live on the NVMe)
+*.log
